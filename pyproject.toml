@@ -6,7 +6,7 @@ license = { text = "Anti-Exploitation License Noncommercial Attribution 1.1" }
 authors = [
     { name = "SparkliTwizzl", email = "github@sparklitwizzl.com" }
 ]
-readme = "README"
+readme = "README.md"
 urls = { Homepage = "https://github.com/sparklitwizzl/pygments-lexer-petrichorscript" }
 requires-python = ">=3.12"
 dependencies = [
