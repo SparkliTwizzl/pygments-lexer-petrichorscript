@@ -15,9 +15,9 @@ class PetrichorScriptLexer(RegexLexer):
             (r'\s+', Text), # whitespace
             (r'\\.', String.Escape), # escaped character
             (r'//.*\n', Comment.Single),
-            (r'[\{\}]', Operator),
-            (r'>>', Operator),
             (r',', Punctuation),
+            (r'[\{\}>>]', Operator),
+            # (r'>>', Operator),
             (r'([a-z][a-z0-9\-]*)(\s*)(:(?!:))', bygroups(Keyword.Reserved, Text, Operator)),
             (r'\[[a-z\-]+\]', Name.Variable),
             (r'"', String, 'string'),
