@@ -9,5 +9,11 @@ Install via GitHub branch: `pip install https://github.com/sparklitwizzl/pygment
 This will install Pygments if not already installed.
 
 
+Use with MkDocs on Windows:
 
-If wi can every figure out how to get the damn thing to actually work with MkDocs wi'll put that here.
+1. Navigate to your MkDocs root directory.
+2. Run `py -m venv [virtual environment folder name]`
+3. Make sure the virtual environment is running.
+4. Install the lexer from the source of your choice.
+5. Run `mkdocs build`. With any luck, the custom lexer will be incorporated into the built output.
+6. If using `mike` for versioning, run `mike deploy`. MAKE SURE TO DO THE PREVIOUS STEP FIRST, OR THE CUSTOM LEXER WONT BE USED.
