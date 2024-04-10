@@ -19,7 +19,7 @@ class PetrichorScriptLexer(RegexLexer):
             (r'[\{\}]', Operator), # token body boundaries
             (r'(?<!>)>>(?!>)', Operator), # text shortcut template divider operator
             (r'(^\s*[a-z]+(?:-[a-z0-9]+)*(?:-[a-z]+)?)(\s*)(:)', bygroups(Keyword.Reserved, Text, Operator)), # token name, whitespacae, token divider
-            (r'\[[a-z\-]+\]', Name.Variable), # field
+            (r'\[[a-z]+(?:-[a-z0-9]+)*(?:-[a-z]+)?\]', Name.Variable), # field
             (r'(?<!\\)"', String, 'string'), # string start
             (r'\b(-)?[0-9.]+\b', Number),
             (r'.', Text),

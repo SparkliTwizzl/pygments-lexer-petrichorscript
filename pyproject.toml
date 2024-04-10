@@ -1,6 +1,6 @@
 [project]
 name = "pygments-lexer-petrichorscript"
-version = "1.0.6"
+version = "1.0.7"
 description = "Pygments lexer for Petrichor Script."
 license = { text = "Anti-Exploitation License Noncommercial Attribution 1.1" }
 authors = [
